@@ -7,7 +7,7 @@ var app = express();
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 //mongoose.connect("mongodb://localhost/todo_db");
-mongoose.connect("mongodb://rituraj07:Luckyisbest%4007@ds115420.mlab.com:15420/todo_db",{ uri_decode_auth: true });
+mongoose.connect("mongodb://rituraj07:<qwerty07@ds115420.mlab.com:15420/todo_db");
 app.set("view engine","ejs");
 app.use(express.static("public"));
 //app.use(MO("_method"));
