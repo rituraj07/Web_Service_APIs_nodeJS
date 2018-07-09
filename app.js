@@ -49,12 +49,12 @@ app.post("/apis/todoes",function(req,res){
         }
     }); 
 });
-app.delete("/blogs/:id",function(req,res){
+app.delete("/apis/todoes/:id",function(req,res){
     Blog.findByIdAndRemove(req.params.id,function(err){
         if(err)
         {console.log(err);}
         
     });
 });
-app.put("")
+//app.put("")
 app.listen(process.env.PORT || 3000);
