@@ -50,7 +50,7 @@ app.post("/apis/todoes",function(req,res){
     }); 
 });
 app.delete("/apis/todoes/:id",function(req,res){
-    Blog.findByIdAndRemove(req.params.id,function(err){
+    todo.findByIdAndRemove(req.params.id,function(err){
         if(err)
         {console.log(err);}
         
